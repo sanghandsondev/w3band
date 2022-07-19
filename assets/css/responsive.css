@@ -1,0 +1,99 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet & Mobile  */
+
+   /* cho nút to ra để ng dùng dễ bấm => fix UX */
+@media (max-width: 1023px){
+    .btn{
+        padding: 15px 16px; 
+    }
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    #footer .socials-list{
+        font-size: 35px;
+    }
+    #footer .socials-list a{
+        margin: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+    .contact-form{
+        line-height: 2;
+    }
+    .contact-submit-btn{
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .mobile-full-width,
+    .mobile-col-full{
+        width: 100% !important;
+    }
+    .mobile-mt-8{
+        margin-top: 8px !important;
+    }
+
+    /* ẩn nút search  */
+    #header .search-btn{
+        display:none;
+    }
+
+    #header{
+    overflow: hidden; /*ẩn đi các đối tượng con vượt quá kích thước của đối tượng cha*/
+    }
+
+    #header .mobile-menu-btn{
+        display: block; /* hiện nút mobile-menu */
+    }
+
+
+    #nav li a{
+        padding: 1px 24px;
+    }
+
+   #nav > li{
+       float: none;
+   }
+
+   #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav .subnav{
+        /* thoát phụ thuộc vào thẻ bên trong header, tránh overflow:hidden */
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px; /*lùi subnav ra cho giống menu con của MORE */
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+}
